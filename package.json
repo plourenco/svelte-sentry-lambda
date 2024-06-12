@@ -22,6 +22,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@babel/preset-typescript": "^7.24.7",
 		"@sentry/sveltekit": "^8.5.0",
 		"@sentry/vite-plugin": "^2.17.0"
 	}

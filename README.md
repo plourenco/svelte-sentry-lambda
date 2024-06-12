@@ -35,4 +35,8 @@ npm run build
 
 You can preview the production build with `npm run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## Deploying
+```bash
+docker build --tag 'sveltekit-lambda' .
+docker run --mount type=bind,source="$(pwd)",target=/app -v $HOME/.aws/credentials:/root/.aws/credentials:ro sveltekit-lambda 
+```
